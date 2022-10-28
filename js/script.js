@@ -25,5 +25,5 @@ function enterClicked() {
 
   // output
   document.getElementById("volume-of-a-pyramid").innerHTML =
-    "the volume of the pyramid is: " + volume + " mm²."
+    "the volume of the pyramid is: " + volume + " ㎣."
 }
