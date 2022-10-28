@@ -8,12 +8,15 @@
     <meta name="keywords" content="mths, ics2o" />
     <meta name="author" content="brennan-lee" />
     <meta name="theme-color" content="#FFFFFF" />
-    <title>GitHub page as PWA template</title>
+    <title>Volume of a Pyramid</title>
     <link
       rel="canonical"
-      href="https://brennan-lee.github.io/ICS2O-PWA-Test/"
+      href="https://brennan-lee.github.io/ICS20-3-02-Volume-of-a-Pyramid/"
     />
-    <link rel="manifest" href="/ICS2O-PWA-Test/manifest.webmanifest" />
+    <link
+      rel="manifest"
+      href="/ICS20-ICS20-3-02-Volume-of-a-Pyramid/manifest.webmanifest"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
     <!--- None blocking for Lighthouse report --->
     <!--- https://stackoverflow.com/questions/32759272/how-to-load-css-asynchronously --->
@@ -57,23 +60,81 @@
       </header>
       <main class="mdl-layout__content">
         <p></p>
-        <img
-          src="./images/notebook-animation.svg"
-          alt="Computer"
-          width="25%"
-          height="25%"
-        />
-        <p></p>
+        <table>
+          <tr>
+            <img
+              src="./images/notebook-animation.svg"
+              alt="Computer"
+              width="25%"
+              height="25%"
+            />
+            <p></p>
+            <!-- basic text -->
+            <th>
+              <h2>Formulas</h2>
+              <h3>A = ( l x w x h ) / 3</h3>
+            </th>
+          </tr>
+        </table>
+        <!-- Simple Textfield -->
+        <form action="#">
+          <p>length</p>
+          <div class="mdl-textfield mdl-js-textfield">
+            <input
+              class="mdl-textfield__input"
+              type="text"
+              pattern="-?[0-9]*(\.[0-9]+)?"
+              id="length-of-pyramid"
+            />
+            <label class="mdl-textfield__label" for="length-of-pyramid"
+              >length here ...</label
+            >
+            <span class="mdl-textfield__error">Input is not a number!</span>
+          </div>
+        </form>
+        <!-- Numeric Textfield -->
+        <form action="#">
+          <p>width</p>
+          <div class="mdl-textfield mdl-js-textfield">
+            <input
+              class="mdl-textfield__input"
+              type="text"
+              pattern="-?[0-9]*(\.[0-9]+)?"
+              id="width-of-Pyramid"
+            />
+            <label class="mdl-textfield__label" for="width-of-Pyramid"
+              >width here ...</label
+            >
+            <span class="mdl-textfield__error">Input is not a number!</span>
+          </div>
+        </form>
+        <form action="#">
+          <p>height</p>
+          <div class="mdl-textfield mdl-js-textfield">
+            <input
+              class="mdl-textfield__input"
+              type="text"
+              pattern="-?[0-9]*(\.[0-9]+)?"
+              id="height-of-pyramid"
+            />
+            <label class="mdl-textfield__label" for="height-of-pyramid"
+              >height here ...</label
+            >
+            <span class="mdl-textfield__error">Input is not a number!</span>
+          </div>
+        </form>
+        <br />
         <!-- Raised button with ripple -->
         <button
           class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
-          onclick="myButtonClicked()"
+          onclick="enterClicked()"
         >
-          Say "Hello, World!"
+          Calculate
         </button>
-        <!-- basic text -->
-        <p></p>
-        <div id="hello-world"></div>
+        <br />
+        <div id="answers">
+          <div id="volume-of-pyramid"></div>
+        </div>
       </main>
     </div>
   </body>
