@@ -18,7 +18,7 @@ if (navigator.serviceWorker) {
 function enterClicked() {
   // input
   const length = parseInt(document.getElementById("length-of-pyramid").value)
-  const width = parseInt(document.getElementById("width-of-pyramid").value)
+  const width = parseInt(document.getElementById("width-of-Pyramid").value)
   const height = parseInt(document.getElementById("height-of-pyramid").value)
   // process
   const volume = (length * width * height) / 3
