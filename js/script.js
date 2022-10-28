@@ -17,9 +17,9 @@ if (navigator.serviceWorker) {
 
 function enterClicked() {
   // input
-  const length = parseInt(document.getElementById("length-of-trapzoid").value)
-  const width = parseInt(document.getElementById("width-of-trapzoid").value)
-  const height = parseInt(document.getElementById("height-of-trapzoid").value)
+  const length = parseInt(document.getElementById("length-of-pyramid").value)
+  const width = parseInt(document.getElementById("width-of-pyramid").value)
+  const height = parseInt(document.getElementById("height-of-pyramid").value)
   // process
   const volume = (length * width * height) / 3
 
