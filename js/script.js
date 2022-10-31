@@ -10,7 +10,7 @@
  * Check service worker.
  */
 if (navigator.serviceWorker) {
-  navigator.serviceWorker.register("/ICS20-3-02-volume-of-a-Pyramid/sw.js", {
+  navigator.serviceWorker.register("/ICS20-3-02-Volume-of-a-Pyramid/sw.js", {
     scope: "/ICS20-3-02-Volume-of-a-Pyramid/sw.js",
   })
 }
