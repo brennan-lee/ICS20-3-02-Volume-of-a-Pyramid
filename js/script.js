@@ -10,12 +10,10 @@
  * Check service worker.
  */
 if (navigator.serviceWorker) {
-  navigator.serviceWorker.register("/ICS20-3-01-volume-of-a-Pyramid/sw.js", {
+  navigator.serviceWorker.register("/ICS20-3-02-volume-of-a-Pyramid/sw.js", {
     scope: "/ICS20-volume-of-a-pyramid/",
   })
 }
-
-const length = parseFloat(document.getElementById("length-of-pyramid").value)
 
 function enterClicked() {
   // input
@@ -26,6 +24,5 @@ function enterClicked() {
   const volume = (length * width * height) / 3
 
   // output
-  document.getElementById("volume-of-a-pyramid").innerHTML =
-    "the volume of the pyramid is: " + volume + " ㎣."
+  document.getElementById("volume").innerHTML ="the volume of the pyramid is: " + volume + " ㎣."
 }
