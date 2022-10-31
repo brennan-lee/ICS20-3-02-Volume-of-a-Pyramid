@@ -15,6 +15,8 @@ if (navigator.serviceWorker) {
   })
 }
 
+const length = parseFloat(document.getElementById("length-of-pyramid").value)
+
 function enterClicked() {
   // input
   const length = parseInt(document.getElementById("length-of-pyramid").value)
