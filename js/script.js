@@ -24,5 +24,6 @@ function enterClicked() {
   const volume = (length * width * height) / 3
 
   // output
-  document.getElementById("volume").innerHTML ="the volume of the pyramid is: " + volume + " ㎣."
+  document.getElementById("volume").innerHTML =
+    "the volume of the pyramid is: " + volume + " ㎣."
 }
